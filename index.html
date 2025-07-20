@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Data and Redirect</title>
+</head>
+<body>
+  <h2>Storing data... please wait</h2>
+
+  <script>
+    // Your user data
+    const userData = {
+      user_id: "iVHIDXjwyvgvxPSuhojJOlCQfAW2",
+      username: "DemoUser",
+      email: "demouser@gmail.com",
+      token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJpVkhJRFhqd3l2Z3Z4UFN1aG9qSk9sQ1FmQVcyIiwiZXhwIjoxNzUzMDEwMzQ0fQ.iCCZXzMpvPSr_82eTNDbUrTMbXYm96_vr3rY87HiegE",
+      token_type: "bearer",
+      avatar: "https://api.dicebear.com/8.x/adventurer/svg?seed=DemoUser"
+    };
+
+    // Store in browser localStorage
+    localStorage.setItem("user_data", JSON.stringify(userData));
+
+    // Redirect to deployed dashboard
+    window.location.href = "https://shadow-chat-new.onrender.com/dashboard";
+  </script>
+</body>
+</html>
